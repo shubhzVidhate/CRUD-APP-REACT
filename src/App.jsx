@@ -64,7 +64,7 @@ function App() {
         {tasks.map((task, index) => (
           <div
             key={index} 
-            className='flex justify-between items-center border-1 border-green-600 rounded-sm px-3 py-2'
+            className='flex justify-between items-center border-1 border-green-600 rounded-sm px-3 py-2 mb-2'
           >
             {task.toUpperCase()}
             <div className='flex justify-between items-center gap-1'>
