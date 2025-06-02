@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import toast from 'react-hot-toast';
 
 function App() {
 
@@ -15,11 +14,9 @@ function App() {
       updateTaskItem[editIndex] = task;
       setTasks(updateTaskItem);
       setEditIndex(null);
-      setTask('');
-      toast.success('Task updated successfully!');  
+      setTask('');  
     }else{
-      setTasks([...tasks, task.toLowerCase()]);
-      toast.success('Task Added successfully!');  
+      setTasks([...tasks, task.toLowerCase()]);  
       setTask('');
       setEditIndex(null);
     }
@@ -31,7 +28,6 @@ function App() {
     console.log(newTasks);
     setTasks(newTasks);
     setEditIndex(null);
-    toast.error('Task deleted successfully!');
   };
 
   const handleEditTask = (index) => {
