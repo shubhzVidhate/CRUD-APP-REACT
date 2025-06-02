@@ -40,6 +40,7 @@ function App() {
   };
 
   return (
+    
     <div className='mx-auto w-100 my-5 border-2 border-green-600'>
       <div className='mb-4 text-2xl font-bold'>
         <h1 className='bg-green-600 text-white py-3 px-3'> CRUD APP</h1>
